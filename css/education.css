@@ -1,0 +1,241 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0f1624;
+  color: #ffffff;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  background-color: #13151a;
+}
+  
+.navbar ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding-left: 0;
+}
+  
+.navbar li a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #ffffffcc;
+  position: relative;
+}
+  
+.navbar li a.active,
+.navbar li a:hover {
+color: #6ac5fe;
+}
+  
+.navbar li a.active::after,
+.navbar li a:hover::after {
+  content: '';
+  display: block;
+  height: 2px;
+  background-color: #6ac5fe;
+  margin-top: 4px;
+}
+
+.hr-text {
+  display: flex;
+  align-items: center;
+  color: #ffffffcc;
+  margin: 40px 0;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-left: 50px;
+}
+
+.hr-text::after {
+  content: '';
+  width: 300px;
+  border-bottom: 3px solid #cccccc;
+  margin-left: 16px;
+}
+
+.education img {
+  display: block;
+  margin: auto;
+  text-align: center;
+  width: 350px;
+  height: auto;
+  padding: 10px;
+}
+
+.education {
+  display: flex;
+  justify-content: center;
+}
+
+
+.hs {
+  width: fit-content;
+  height: 250px;
+  border-radius: 4px;
+  background-color: #142142;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  margin: 30px;
+  padding: 20px;
+}
+
+h1 {
+  font-size: x-large;
+}
+
+h2 { 
+  font-size: medium;
+}
+
+h4 {
+  font-size: large;
+}
+
+.hs:hover {
+  background-color: #1d2b5c;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+.shs {
+  width: fit-content;
+  height: 250px;
+  border-radius: 4px;
+  background-color: #142142;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  margin: 30px;
+  padding: 20px;
+}
+
+.shs img {
+  width: 134px;
+}
+
+.shs:hover {
+  background-color: #1d2b5c;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+.college {
+  width: fit-content;
+  height: 250px;
+  border-radius: 4px;
+  background-color: #142142;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  margin: 30px;
+  padding: 20px;
+}
+
+.college img {
+  width: 240px;
+}
+
+.college:hover {
+  background-color: #1d2b5c;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+.oc {
+  display: flex;
+  justify-content: center;
+}
+
+.sololearn {
+  background-color: #142142;
+  margin: auto;
+  border-radius: 4px;
+}
+
+.sololearn-2 {
+  background-color: #142142;
+  margin: auto;
+  border-radius: 4px;
+}
+
+.cisco {
+  background-color: #142142;
+  margin: auto;
+  border-radius: 4px;
+}
+
+.cisco-2 {
+  background-color: #142142;
+  margin: auto;
+  border-radius: 4px;
+}
+
+.image-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 100px;
+  margin: auto;
+  border-radius: 4px;
+}
+
+
+.image-container img {
+  width: 100%;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  text-align: center;
+}
+
+
+.overlay h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.certificate-link {
+  background: white;
+  color: black;
+  padding: 5px 10px;
+  text-decoration: none;
+  margin-top: 10px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+.certificate-link:hover {
+  background-color: #6ac5fe;
+}
+
+footer {
+  text-align: center;
+  margin-top: 3rem;
+  color: #aaa;
+  font-size: 0.9rem;
+}

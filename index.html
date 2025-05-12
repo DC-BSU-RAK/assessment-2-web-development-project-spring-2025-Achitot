@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" >
+</head>
+<body>
+    <div class="container">
+        <div class="intro">
+          <h1>Christine Rea Arais</h1>
+          <h2>I'm a<span class="typing" id="typed-text"></span></h2>
+        </div>
+        
+        <nav class="navbar">
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="html/about.html">About</a></li>
+            <li><a href="html/education.html">Education</a></li>
+            <li><a href="html/skills.html">Skills</a></li>
+            <li><a href="html/projects.html">Projects</a></li>
+            <li><a href="https://www.canva.com/design/DAGGEXjtxpE/erHTwJRT2Q0bZuC-sSKeNg/view?utm_content=DAGGEXjtxpE&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hf96edec32f">Resume</a></li>
+            <li><a href="html/contact.html">Contact</a></li>
+          </ul>
+        </nav>
+    
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/christine-arais-84b736309/" target="_blank">
+                <img src="css/images/LinkedIn.png" alt="LinkedIn" />
+            </a>
+
+            <a href="https://github.com/Achitot" target="_blank">
+                <img src="css/images/GitHub.png" alt="GitHub" />
+            </a>
+
+            <a href="https://www.youtube.com/@Achitot" target="_blank"> 
+                <img src="css/images/Youtube.png" alt="Youtube">
+            </a>
+        </div>
+    </div>
+    
+      <script>
+        const roles = [" Web Developer", "n App Developer", " Photographer", " Video Editor"];
+        let i = 0, j = 0, isDeleting = false, current = '', speed = 50;
+        const element = document.getElementById("typed-text");
+    
+        function type() {
+          current = roles[i];
+          if (isDeleting) {
+            element.textContent = current.substring(0, --j);
+          } else {
+            element.textContent = current.substring(0, ++j);
+          }
+    
+          if (!isDeleting && j === current.length) {
+            isDeleting = true;
+            setTimeout(type, 1000);
+          } else if (isDeleting && j === 0) {
+            isDeleting = false;
+            i = (i + 1) % roles.length;
+            setTimeout(type, 300);
+          } else {
+            setTimeout(type, speed);
+          }
+        }
+    
+        document.addEventListener("DOMContentLoaded", type);
+      </script>
+
+    <footer>
+        <p>&copy; 2025 Christine. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
