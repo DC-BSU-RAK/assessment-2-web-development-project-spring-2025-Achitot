@@ -183,3 +183,54 @@ footer {
   color: #aaa;
   font-size: 14.4px;
 }
+
+@media screen and (max-width: 768px) {
+  .navbar ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    padding: 10px 0;
+  }
+
+  .skills {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .skills > div {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+  }
+
+  .skills img {
+    width: 60%;
+    max-width: 150px;
+    padding: 10px;
+  }
+
+  .app-dev img {
+    width: 70%;
+    max-width: 200px;
+  }
+
+  .hr-text {
+    justify-content: center;
+    margin: 10px 0;
+  }
+
+  .hr-text::after {
+    width: 40px;
+    border-bottom: 2px solid #cccccc;
+  }
+
+  footer {
+    font-size: 13px;
+    padding: 10px;
+  }
+}
+

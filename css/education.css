@@ -239,3 +239,69 @@ footer {
   color: #aaa;
   font-size: 0.9rem;
 }
+
+@media screen and (max-width: 768px) {
+  .navbar ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 10px 0;
+  }
+
+  .hr-text {
+    margin: 30px 10px;
+    justify-content: center;
+    font-size: 0.9rem;
+  }
+
+  .hr-text::after {
+    width: 120px;
+    border-bottom: 2px solid #ccc;
+  }
+
+  .education {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .hs, .shs, .college {
+    width: 90%;
+    height: auto;
+    padding: 16px;
+    margin: 16px auto;
+    text-align: center;
+  }
+
+  .shs img, .college img {
+    width: 80%;
+    height: auto;
+  }
+
+  .oc {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .image-container {
+    width: 90%;
+    height: auto;
+  }
+
+  .overlay h2 {
+    font-size: 16px;
+  }
+
+  .certificate-link {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+
+  footer {
+    font-size: 0.8rem;
+    margin-top: 2rem;
+  }
+}

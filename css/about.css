@@ -233,3 +233,56 @@ footer {
   color: #aaa;
   font-size: 14px;
 }
+
+@media screen and (max-width: 768px) {
+  .navbar ul {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 10px;
+  }
+
+  .about-me {
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+
+  .about-me img {
+    margin: 0;
+    width: 80%;
+    max-width: 250px;
+  }
+
+  .container {
+    padding: 0 20px;
+    text-align: justify;
+  }
+
+  .more-information ul {
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+  }
+
+  .hobbies {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hobbies > div {
+    margin: 10px 0;
+    width: 80%;
+    max-width: 300px;
+  }
+
+  .hr-text {
+    justify-content: center;
+    margin-left: 0;
+  }
+
+  .hr-text::after {
+    width: 100px;
+  }
+}

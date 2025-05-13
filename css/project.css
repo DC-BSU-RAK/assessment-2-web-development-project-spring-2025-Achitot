@@ -260,3 +260,91 @@ footer {
     color: #aaa;
     font-size: 0.9rem;
 }
+
+
+@media screen and (max-width: 768px) {
+  .navbar ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 10px 0;
+  }
+
+  .hr-text {
+    margin-left: 20px;
+    font-size: 0.9rem;
+  }
+
+  .hr-text::after {
+    width: 150px;
+  }
+
+  .webdev {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .wd1, .wd2 {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  .wd2 img,
+  .wd1 img {
+    width: 100%;
+    height: auto;
+  }
+
+  .appdev {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ad1 .container {
+    width: 90%;
+    padding: 10px;
+    border-radius: 20px;
+  }
+
+  .ad1 img {
+    width: 100%;
+    height: auto;
+  }
+
+  .editing {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .vid1 .container,
+  .vid2 .container,
+  .vid3 .container,
+  .vid4 .container,
+  .vid5 .container {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .vid1 img,
+  .vid2 img,
+  .vid3 img,
+  .vid4 img,
+  .vid5 img {
+    width: 100%;
+    height: auto;
+  }
+
+  .overlay img {
+    width: 60px;
+  }
+
+  .overlay p {
+    margin: 0;
+  }
+
+  footer {
+    font-size: 0.75rem;
+    margin-top: 2rem;
+  }
+}
