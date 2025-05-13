@@ -97,6 +97,7 @@ nav {
   flex-wrap: wrap;
   gap: 10px;
   margin-top: 35px;
+  text-indent: 10px;
 }
 
 .more-information li {
@@ -110,7 +111,7 @@ nav {
 .more-information li::before {
   content: '>';
   color: #2089ec;
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 h1 {
