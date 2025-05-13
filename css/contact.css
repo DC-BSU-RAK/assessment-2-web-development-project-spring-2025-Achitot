@@ -246,3 +246,13 @@ footer {
     color: #aaa;
     font-size: 0.9rem;
 }
+
+@media screen and (max-width: 768px) {
+  .navbar ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 10px 0;
+    }
+}
